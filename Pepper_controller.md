@@ -9,10 +9,7 @@ and then:
 ```
 sudo python2 get-pip.py
 ```
-If it doesn't work try with:
-```
-sudo python2.7 get-pip.py
-```
+
 Pepper controller can be found [here](https://github.com/incognite-lab/Pepper-Controller)
 
 and can be cloned with:
