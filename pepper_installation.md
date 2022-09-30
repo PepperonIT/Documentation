@@ -6,15 +6,14 @@ Install python 2.7 on [python installers](https://www.python.org/downloads/relea
 ## Ubuntu
 On ubuntu it is not enough to have ubuntu, you also need to install python2.7-dev: \
 To install python 2.7 run the command:
->sudo apt install python2.7 
+> sudo apt install python2.7 
 
 Then to install python2.7-dev run:
 > sudo apt install python2.7-dev
 
 # naoqi
 ## Ubuntu
-Download and extract the python SDK from:
-> https://developer.softbankrobotics.com/pepper-naoqi-25-downloads-linux
+Download and extract the [Python SDK](https://developer.softbankrobotics.com/pepper-naoqi-25-downloads-linux).
 
 The SDK then needs to be added to the python path, to get the path open the naoqi folder in a terminal and navigate to:
 > ~/lib/python2.7/site-packages/
