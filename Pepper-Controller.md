@@ -11,4 +11,4 @@ To install packages run `pip2 install -r ./requirements.txt` or
 To install required packages which isn't included in requirements run
 `pip2 install opencv-python==4.2.0.32`
 
-On linux you have to run `apt install python-tk`
+On linux you have to install python-tk and then run the installation `apt install python-tk`
