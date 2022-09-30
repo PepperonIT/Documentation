@@ -1,8 +1,6 @@
 # Pepper Controller
 For the full documentation, read [this .md file](https://github.com/incognite-lab/Pepper-Controller/blob/main/README.md?plain=1)
 
----
-#### install pip2
 To install pip2  in ubuntu run:
 ```
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
