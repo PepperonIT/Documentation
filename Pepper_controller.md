@@ -10,9 +10,7 @@ and then:
 sudo python2 get-pip.py
 ```
 
-Pepper controller can be found [here](https://github.com/incognite-lab/Pepper-Controller)
-
-and can be cloned with:
+Pepper controller can be found [here](https://github.com/incognite-lab/Pepper-Controller) and can be cloned with:
 ```
 git clone https://github.com/incognite-lab/Pepper-Controller.git
 ```
