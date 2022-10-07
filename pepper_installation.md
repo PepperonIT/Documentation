@@ -3,7 +3,8 @@
 ## Windows
 Install python 2.7 on [python installers](https://www.python.org/downloads/release/python-2718/).
 
-## Ubuntu
+## Linux
+### Ubuntu/Debian
 On ubuntu it is not enough to have ubuntu, you also need to install python2.7-dev: \
 To install python 2.7 run the command:
 ```
@@ -14,6 +15,40 @@ Then to install python2.7-dev run:
 ```
 sudo apt install python2.7-dev
 ```
+
+### Arch Linux / Manjaro
+On arch-based systems it is necessary to build python 2 from source. The source release can be downloaded from the official python website [found here](https://www.python.org/downloads/release/python-2718/)(2.7.18).
+
+For installing the Gzipped source tarball version you can do the following:
+
+First you unzip the downloaded archive:
+```
+tar -xzvf Python-2.7.18.tgz
+```
+
+After that, you navigate to the unzipped folder. For more detailed installation instructions, it is suggested to read the README. The short simple version follows:
+
+First we run the configuration file:
+```
+./configure
+```
+
+When that has finished you run:
+```
+make
+```
+
+This creates an executable in /usr/local/. Next do:
+```
+su root
+```
+
+Then install python with:
+```
+make install
+```
+
+After it has finished, python 2 should be successfully installed
 # naoqi
 ## Ubuntu
 Download and extract the [Python SDK](https://developer.softbankrobotics.com/pepper-naoqi-25-downloads-linux).
