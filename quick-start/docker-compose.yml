@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  block-server:
+    image: pepperonit/block-server
+    container_name: block-server
+    ports:
+      - 5000:5000
+    environment:
+      - PEPPER_PASSWORD="password"
+      - PEPPER_PORT=9559
+      - PEPPER_IP="130.240.238.32"
+      - PEPPER_USERNAME="nao"
+      - PORT=5000
