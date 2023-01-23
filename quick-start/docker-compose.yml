@@ -11,3 +11,13 @@ services:
       - PEPPER_IP="130.240.238.32"
       - PEPPER_USERNAME="nao"
       - PORT=5000
+  blockly-site:
+    image: pepperonit/blockly-site
+    container_name: blockly-site
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_SERVER_IP="192.168.1.65"
+      - REACT_APP_SERVER_PORT=3000
+      - REACT_APP_ADMIN_NICKNAME="[Your chosen admin username]"
+      - REACT_APP_ADMIN_PW="[Your chosen admin password]"
