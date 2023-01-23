@@ -21,3 +21,13 @@ services:
       - REACT_APP_SERVER_PORT=3000
       - REACT_APP_ADMIN_NICKNAME="[Your chosen admin username]"
       - REACT_APP_ADMIN_PW="[Your chosen admin password]"
+  rps-server:
+    image: pepperonit/rps_server:latest
+    container_name: rps-server
+    restart: on-failure
+    ports:
+      - 5001:5000
+    environment:
+      - RPS_SCHEMA_HOSTNAME="https://example.com:5001" # Change this to your hostname
+    volumes:
+      - ./rps/saved_models/data_collection:/app/saved_models/data_collection
