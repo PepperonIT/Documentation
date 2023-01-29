@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  block-server:
+    image: pepperonit/block-server
+    container_name: block-server
+    ports:
+      - 5000:5000
+    environment:
+      - PEPPER_PASSWORD="password"
+      - PEPPER_PORT=9559
+      - PEPPER_IP="130.240.238.32"
+      - PEPPER_USERNAME="nao"
+      - PORT=5000
+  blockly-site:
+    build:
+      context: https://github.com/PepperonIT/blockly-site.git#main
+      args:
+        REACT_APP_SERVER_IP: "192.168.1.65"
+        REACT_APP_SERVER_PORT: 5000
+        REACT_APP_ADMIN_NICKNAME: "[Your chosen admin username]"
+        REACT_APP_ADMIN_PW: "[Your chosen admin password]"
+    container_name: blockly-site
+    ports:
+      - 3000:3000
+  rps-server:
+    image: pepperonit/rps_server:latest
+    container_name: rps-server
+    restart: on-failure
+    ports:
+      - 5001:5000
+    environment:
+      - RPS_SCHEMA_HOSTNAME="https://example.com:5001" # Change this to your hostname
+    volumes:
+      - ./rps/saved_models/data_collection:/app/saved_models/data_collection
